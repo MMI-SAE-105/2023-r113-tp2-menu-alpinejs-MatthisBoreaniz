@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu des animaux</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        display: grid;
+        place-content: center;
+      }
+      .header__menuBtn{
+        position: relative;
+        z-index: 10;
+      }
+      .noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+    </style>
+  </head>
+  <body>
+    <!-- https://emmet.io/ -->
+    <!-- header>h1{Test de menu} -->
+    <header>
+      <a href="/en/index.html">page anglais</a>
+      <a href=""></a>
+      <button arial-controls="maiNav" 
+      @click="menuIsOpen = ! menuIsOpen" 
+      class="header__menuBtn"
+      >menu</button>
+      <h1>Chats et Chiens</h1>
+      <nav id="mainNav" 
+      x-show="menuIsOpen" 
+      x-transition.duration.800ms
+      class="menu"
+      >
+        <ul>
+          <li><a href="cats/index.html"> accueil menu chats</a>
+          <ul>
+            <li><a href="cats/chat1.html">Le chat 1</a></li>
+            <li><a href="cats/chat2.html">Le chat 2</a></li>
+          
+          </ul>
+          
+          </li>
+          <li><a href="dogs/index.html">menu chiens</a></li>
+          <ul>
+            <li><a href="dogs/chien1.html">Le chien 1</a></li>
+            <li><a href="dogs/chien2.html">Le chien 2</a></li>
+          
+          </ul>
+          
+          <li><a href="index.html">Accueil du site</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- h2>lorem2^p>lorem -->
+    <h2>Lorem, ipsum.</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+      mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
+      nemo aliquid pariatur quam voluptates animi laudantium, aperiam
+      consectetur nobis enim.
+    </p>
+    <dl>
+      <dt>lorem</dt>
+      <dd>Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl>
+      <dt>Quidem?</dt>
+      <dd>Obcaecati odio dolorum necessitatibus impedit!</dd>
+    </dl>
+    <dl>
+      <dt>Iure.</dt>
+      <dd>Blanditiis qui possimus quae numquam.</dd>
+    </dl>
+  </div>
+  </body>
+</html>

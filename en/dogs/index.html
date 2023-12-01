@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dogs menu</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+        .menu {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: #fff;
+          display: grid;
+          place-content: center;
+        }
+        .header__menuBtn{
+          position: relative;
+          z-index: 10;
+        }
+        .noscroll,
+  .noscroll body {
+    overflow: hidden;
+  }
+      </style>
+</head>
+<body>
+    <header>
+      <a href="/fr/dogs/index.html">page français</a>
+        <button arial-controls="maiNav" 
+        @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn"
+        >menu</button>
+        <h1>dogs menu</h1>
+        <nav id="mainNav" 
+        x-show="menuIsOpen" 
+        x-transition.duration.800ms
+        class="menu"
+        >
+          <ul>
+            <li><a href="/cats/index.html"> cats menu homepage</a>
+            <ul>
+              <li><a href="/cats/chat1.html">cat 1</a></li>
+              <li><a href="/cats/chat2.html">cat 2</a></li>
+            
+            </ul>
+            
+            </li>
+            <li><a href="index.html">dogs menu</a></li>
+            <ul>
+              <li><a href="chien1.html">dogs 1</a></li>
+              <li><a href="chien2.html">dogs 2</a></li>
+            
+            </ul>
+            
+            <li><a href="../index.html">Website homepage</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <ul>
+          <li><a href="chien1.html">dog 1</a></li>
+          <li><a href="chien2.html">dog 2</a></li>
+          <li><a href="../index.html">WebSite homepage</a></li>
+          <img src="" alt="">
+      </main>
+    
+</body>
+</html>

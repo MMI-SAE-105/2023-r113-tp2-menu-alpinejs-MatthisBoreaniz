@@ -2,9 +2,8 @@
 <html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>chat2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dog 1</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
         .menu {
@@ -29,44 +28,44 @@
 </head>
 <body>
     <header>
+      <a href="/fr/dogs/chien1.html">page français</a>
         <button arial-controls="maiNav" 
         @click="menuIsOpen = ! menuIsOpen" 
         class="header__menuBtn"
         >menu</button>
-        <h1>chat</h1>
+        <h1>dog 1</h1>
         <nav id="mainNav" 
         x-show="menuIsOpen" 
         x-transition.duration.800ms
         class="menu"
         >
           <ul>
-            <li><a href="index.html"> accueil menu chats</a>
+            <li><a href="/cats/index.html"> cats menu homepage</a>
             <ul>
-              <li><a href="cats/chat1.html">Le chat 1</a></li>
-              <li><a href="chat2.html">Le chat 2</a></li>
+              <li><a href="/cats/chat1.html">cat 1</a></li>
+              <li><a href="/cats/chat2.html">cat 2</a></li>
             
             </ul>
             
             </li>
-            <li><a href="dogs/index.html">menu chiens</a></li>
+            <li><a href="index.html">dogs menu</a></li>
             <ul>
-              <li><a href="dogs/chien1.html">Le chien 1</a></li>
-              <li><a href="dogs/chien2.html">Le chien 2</a></li>
+              <li><a href="chien1.html">dog 1</a></li>
+              <li><a href="chien2.html">dog 2</a></li>
             
             </ul>
             
-            <li><a href="../index.html">Accueil du site</a></li>
+            <li><a href="../index.html">WebSite homepage</a></li>
           </ul>
         </nav>
       </header>
-    <main>
-        <main>
-            <ul>
-              <li><a href="chat1.html">Chat1</a></li>
-              <li><a href="index.html">Accueil des chats</a></li>
-              <li><a href="../index.html">Accueil du site</a></li>
-              <img src="" alt="">
-          </main>
-    </main>
+      <main>
+        <ul>
+          <li><a href="chien2.html">dog 2 </a></li>
+          <li><a href="index.html">dogs homepage</a></li>
+          <li><a href="../index.html">WebSite homepage</a></li>
+          <img src="" alt="">
+      </main>
+    
 </body>
 </html>

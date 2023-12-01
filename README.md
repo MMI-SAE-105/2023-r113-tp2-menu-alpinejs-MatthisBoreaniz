@@ -1,3 +1,3 @@
 - nom : BOREANIZ
 - prénom : Matthis
-- URL publique du site : https://main--magical-rolypoly-ab25c3.netlify.app
+- URL publique du site : https://testnetlify.boreaniz.fr

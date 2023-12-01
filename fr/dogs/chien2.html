@@ -2,9 +2,8 @@
 <html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>page chat 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
         .menu {
@@ -29,29 +28,30 @@
 </head>
 <body>
     <header>
+      <a href="/en/dogs/chien2.html">page anglais</a>
         <button arial-controls="maiNav" 
         @click="menuIsOpen = ! menuIsOpen" 
         class="header__menuBtn"
         >menu</button>
-        <h1>Chat1</h1>
+        <h1>Chien2</h1>
         <nav id="mainNav" 
         x-show="menuIsOpen" 
         x-transition.duration.800ms
         class="menu"
         >
           <ul>
-            <li><a href="index.html"> accueil menu chats</a>
+            <li><a href="/cats/index.html"> accueil menu chats</a>
             <ul>
-              <li><a href="chat1.html">Le chat 1</a></li>
-              <li><a href="chat2.html">Le chat 2</a></li>
+              <li><a href="/cats/chat1.html">Le chat 1</a></li>
+              <li><a href="/cats/chat2.html">Le chat 2</a></li>
             
             </ul>
             
             </li>
-            <li><a href="dogs/index.html">menu chiens</a></li>
+            <li><a href="index.html">menu chiens</a></li>
             <ul>
-              <li><a href="dogs/chien1.html">Le chien 1</a></li>
-              <li><a href="dogs/chien2.html">Le chien 2</a></li>
+              <li><a href="chien1.html">Le chien 1</a></li>
+              <li><a href="chien2.html">Le chien 2</a></li>
             
             </ul>
             
@@ -61,10 +61,11 @@
       </header>
       <main>
         <ul>
-          <li><a href="chat2.html">chat2</a></li>
-          <li><a href="index.html">Accueil des chats</a></li>
+          <li><a href="chien1.html">chien1</a></li>
+          <li><a href="index.html">Accueil des chiens</a></li>
           <li><a href="../index.html">Accueil du site</a></li>
           <img src="" alt="">
       </main>
+    
 </body>
 </html>

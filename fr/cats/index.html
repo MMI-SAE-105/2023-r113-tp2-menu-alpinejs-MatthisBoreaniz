@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu des chats</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+        .menu {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: #fff;
+          display: grid;
+          place-content: center;
+        }
+        .header__menuBtn{
+          position: relative;
+          z-index: 10;
+        }
+        .noscroll,
+  .noscroll body {
+    overflow: hidden;
+  }
+      </style>
+</head>
+<body>
+    <header>
+      <a href="/en/cats/index.html">page anglais</a>
+        <button arial-controls="maiNav" 
+        @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn"
+        >menu</button>
+        <h1>Menu des chats</h1>
+        <nav id="mainNav" 
+        x-show="menuIsOpen" 
+        x-transition.duration.800ms
+        class="menu"
+        >
+          <ul>
+            <li><a href="index.html"> accueil menu chats</a>
+            <ul>
+              <li><a href="chat1.html">Le chat 1</a></li>
+              <li><a href="chat2.html">Le chat 2</a></li>
+            
+            </ul>
+            
+            </li>
+            <li><a href="/dogs/index.html">menu chiens</a></li>
+            <ul>
+              <li><a href="/dogs/chien1.html">Le chien 1</a></li>
+              <li><a href="/dogs/chien2.html">Le chien 2</a></li>
+            
+            </ul>
+            
+            <li><a href="../index.html">Accueil du site</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+      <ul>
+        <li><a href="chat1.html">chat1</a></li>
+        <li><a href="chat2.html">chat2</a></li>
+        <li><a href="../index.html">Accueil du site</a></li>
+        <a href="chat1.html"><img src="/public/img/cats/chat tigré de face.jpg" width="50%" height="20%" alt="chat tigré de face">Chat tigré</a>
+        <a href="chat1.html"><img src="/public/img/cats/Domestic_cat_in_the_grass.JPG" width="400" height="320" alt="chat domstique noir et blanc">Chat domestique</a>
+    </main>
+</body>
+</html>

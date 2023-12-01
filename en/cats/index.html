@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chien 1</title>
+    <title>cats menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
         .menu {
@@ -28,43 +28,44 @@
 </head>
 <body>
     <header>
+      <a href="/fr/cats/index.html">page français</a>
         <button arial-controls="maiNav" 
         @click="menuIsOpen = ! menuIsOpen" 
         class="header__menuBtn"
         >menu</button>
-        <h1>Chien1</h1>
+        <h1>cats menu</h1>
         <nav id="mainNav" 
         x-show="menuIsOpen" 
         x-transition.duration.800ms
         class="menu"
         >
           <ul>
-            <li><a href="/cats/index.html"> accueil menu chats</a>
+            <li><a href="index.html"> cats menu homepage</a>
             <ul>
-              <li><a href="/cats/chat1.html">Le chat 1</a></li>
-              <li><a href="/cats/chat2.html">Le chat 2</a></li>
+              <li><a href="chat1.html">vat 1</a></li>
+              <li><a href="chat2.html">cat 2</a></li>
             
             </ul>
             
             </li>
-            <li><a href="index.html">menu chiens</a></li>
+            <li><a href="/dogs/index.html">dog menu</a></li>
             <ul>
-              <li><a href="chien1.html">Le chien 1</a></li>
-              <li><a href="chien2.html">Le chien 2</a></li>
+              <li><a href="/dogs/chien1.html">dog 1</a></li>
+              <li><a href="/dogs/chien2.html">dog 2</a></li>
             
             </ul>
             
-            <li><a href="../index.html">Accueil du site</a></li>
+            <li><a href="../index.html">WebSite homepage</a></li>
           </ul>
         </nav>
       </header>
-      <main>
-        <ul>
-          <li><a href="chien2.html">chien2</a></li>
-          <li><a href="index.html">Accueil des chiens</a></li>
-          <li><a href="../index.html">Accueil du site</a></li>
-          <img src="" alt="">
-      </main>
-    
+    <main>
+      <ul>
+        <li><a href="chat1.html">cat 1</a></li>
+        <li><a href="chat2.html">cat 2</a></li>
+        <li><a href="../index.html">WebSite homepage</a></li>
+        <a href="chat1.html"><img src="/public/img/cats/chat tigré de face.jpg" width="50%" height="20%" alt="chat tigré de face">Chat tigré</a>
+        <a href="chat1.html"><img src="/public/img/cats/Domestic_cat_in_the_grass.JPG" width="400" height="320" alt="chat domstique noir et blanc">Chat domestique</a>
+    </main>
 </body>
 </html>
